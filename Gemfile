@@ -6,11 +6,15 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem 'webrat'
 
 group :development do
   gem 'rspec-rails'
 end
-
+group :test do
+  gem 'rspec'
+  gem 'spoke'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
